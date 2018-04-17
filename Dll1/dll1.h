@@ -1,4 +1,6 @@
 #pragma once
+
+#define MAXResults 50
 extern "C"
 {
 	struct MyStruct
@@ -7,6 +9,24 @@ extern "C"
 		int num;
 		int id;
 	};
-	__declspec(dllexport) int testDll(MyStruct para);
-	__declspec(dllexport) int testIplimage(MyStruct *paraArray,int size);
+	struct StructIplimage
+	{
+		int id;
+	};
+
+	struct AlarmInfo
+	{
+		int framNo;         //’Ï∫≈
+		bool result;
+	};
+
+	struct Results {
+		int a;
+		int b;
+	};
+
+
+	__declspec(dllexport) int testInputStruct(MyStruct para);
+	__declspec(dllexport) int testOutPutStructArray(Results *results,int size);
+
 }
