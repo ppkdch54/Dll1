@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dll1", "Dll1\Dll1.vcxproj", "{E22F26C8-9110-4F2F-90F2-A1209C98FA8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{CE37E001-988A-4131-9141-96982D003B3B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E22F26C8-9110-4F2F-90F2-A1209C98FA8F} = {E22F26C8-9110-4F2F-90F2-A1209C98FA8F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

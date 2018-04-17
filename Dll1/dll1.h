@@ -8,4 +8,5 @@ extern "C"
 		int id;
 	};
 	__declspec(dllexport) int testDll(MyStruct para);
+	__declspec(dllexport) int testIplimage(MyStruct *paraArray,int size);
 }
